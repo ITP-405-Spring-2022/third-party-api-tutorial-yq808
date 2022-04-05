@@ -14,7 +14,7 @@ Authentication is needed to query the Unsplash API. You can acquire an access to
 
 ***
 
-To implement the Unsplash API in PHP...
+To implement the photo search feature from the Unsplash API using PHP...
 ```php
 Route::get('/unsplash', function (Request $request) {
     $query = $request->query('query');
