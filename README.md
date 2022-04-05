@@ -27,7 +27,15 @@ Route::get('/unsplash', function (Request $request) {
 });
 ```
 
+We are applying the params *query, orientation, and page*.
+
+***
+
 Authentication is needed to display photo results for a query. You can acquire an access token through first logging in or creating an account [here](https://unsplash.com/oauth/applications), then registering a new application. Then, we can get the access token and save it as an environment variable.
+
+![The application that was created to gain access to the access token](/img/application.png)
+
+![The access token in the applications, blurred](/img/key.jpg)
 
 ***
 
