@@ -35,7 +35,7 @@ Route::get('/unsplash', function (Request $request) {
 });
 ```
 
-We are applying the params *query, orientation, and page*.
+We are applying the params *query*, *orientation*, and *page*.
 
 ***
 
