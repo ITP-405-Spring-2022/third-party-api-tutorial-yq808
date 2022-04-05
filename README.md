@@ -6,6 +6,14 @@ Documentation for the Unsplash API can be found [here](https://unsplash.com/docu
 
 ***
 
+Authentication is needed to display photo results for a query. You can acquire an access token through first logging in or creating an account [here](https://unsplash.com/oauth/applications), then registering a new application. Then, we can get the access token and save it as an environment variable.
+
+![The application that was created to gain access to the access token](/img/application.png)
+
+![The access token in the applications, blurred](/img/key.jpg)
+
+***
+
 To implement the Unsplash API in PHP...
 ```php
 Route::get('/unsplash', function (Request $request) {
@@ -31,20 +39,12 @@ We are applying the params *query, orientation, and page*.
 
 ***
 
-Authentication is needed to display photo results for a query. You can acquire an access token through first logging in or creating an account [here](https://unsplash.com/oauth/applications), then registering a new application. Then, we can get the access token and save it as an environment variable.
-
-![The application that was created to gain access to the access token](/img/application.png)
-
-![The access token in the applications, blurred](/img/key.jpg)
-
-***
-
 The response is a JSON object that looks like this:
 
 ![JSON object with search results for the keyword "city"](/img/json_results.png)
 
 ***
 
-We can output the first 10 most relevant results in a page with the image, description of the image, and the date at which the image was uploaded to Unsplash. This is what the output will look like.
+We can output the first 10 most relevant results to a page with the image, description of the image, and the date at which the image was uploaded to Unsplash. This is what the output will look like.
 
 ![A page outputting the top 10 search results for the keyword "city"](/img/city_results.jpg)
