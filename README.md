@@ -1,6 +1,6 @@
 # Unsplash API!
 
-[Unsplash](https://unsplash.com/) is an image sharing app. Users are able to search for high resolution, free-to-use images and download them for use. The Unsplash API includes information about the images that are uploaded to the Unsplash website, as well as information about the users such as portfolios and collections. Today, we are going to work on displaying the first 10 photos posted on Unsplash for a given search keyword. The user is responsible for providing the keyword.
+[Unsplash](https://unsplash.com/) is an image sharing app. Users are able to search for high resolution, free-to-use images and download them for use. The Unsplash API includes information about the images that are uploaded to the Unsplash website, as well as information about the users such as portfolios and collections. Today, we are going to work on displaying the top 10 photos posted on Unsplash for a given search keyword. The user is responsible for providing the keyword.
 
 Documentation for the Unsplash API can be found [here](https://unsplash.com/documentation).
 
