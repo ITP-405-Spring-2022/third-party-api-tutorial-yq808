@@ -23,7 +23,7 @@ Route::get('/unsplash', function (Request $request) {
 
     $response = Cache::remember($cacheKey, 60, function () use ($query) {
         return Http::withHeaders([
-            'Authorization' => "Client-ID " . env('UNSPLASH_API_KEY'),
+            'Authorization' => "Client-ID " . env('UNSPLASH_TOKEN'),
         ])
         ->get("https://api.unsplash.com/search/photos?query=$query&orientation=landscape&page=1")
         ->object();
